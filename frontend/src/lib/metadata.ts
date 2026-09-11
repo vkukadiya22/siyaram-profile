@@ -39,7 +39,7 @@ export function constructMetadata({
       images: [image],
     },
     icons,
-    metadataBase: new URL('https://www.siyaramprofile.com'),
+    metadataBase: new URL('https://siyaramprofile.in'),
     ...(noIndex && {
       robots: {
         index: false,
@@ -55,7 +55,7 @@ export function getOrganizationSchema() {
     '@type': 'LocalBusiness',
     name: COMPANY_INFO.name,
     description: COMPANY_INFO.description,
-    url: 'https://www.siyaramprofile.com',
+    url: 'https://siyaramprofile.in',
     telephone: COMPANY_INFO.phone,
     address: {
       '@type': 'PostalAddress',

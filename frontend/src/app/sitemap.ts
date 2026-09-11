@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { NAV_ITEMS } from '@/lib/constants';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.siyaramprofile.com';
+  const baseUrl = 'https://siyaramprofile.in';
 
   const routes = NAV_ITEMS.map((item) => ({
     url: `${baseUrl}${item.href}`,
