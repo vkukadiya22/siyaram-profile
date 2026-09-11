@@ -14,7 +14,7 @@ export default function Logo({
   variant = "light",
   showText = true,
   className = "",
-  size = 50,
+  size,
 }: LogoProps) {
   const [imgError, setImgError] = useState(false);
 
@@ -23,12 +23,12 @@ export default function Logo({
   return (
     <Link
       href="/"
-      className={`inline-flex items-center gap-3 group transition-opacity hover:opacity-95 ${className}`}
+      className={`inline-flex items-center gap-2 sm:gap-3 group transition-opacity hover:opacity-95 flex-shrink-0 ${className}`}
     >
-      {/* Expanded Official Logo Container with Crisp White Background & Minimal Padding */}
+      {/* Expanded Official Logo Container with Responsive Dimensions */}
       <div
-        className="relative flex-shrink-0 rounded-full bg-white p-0.5 shadow-md border-2 border-white/90 flex items-center justify-center overflow-hidden"
-        style={{ width: `${size}px`, height: `${size}px` }}
+        className="relative flex-shrink-0 rounded-full bg-white p-0.5 shadow-md border-2 border-white/90 flex items-center justify-center overflow-hidden w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12"
+        style={size ? { width: `${size}px`, height: `${size}px` } : undefined}
       >
         {!imgError ? (
           <img
@@ -74,9 +74,9 @@ export default function Logo({
         )}
       </div>
 
-      {/* Brand Text */}
+      {/* Brand Text - Single Line Guaranteed & Responsively Scaled */}
       {showText && (
-        <span className={`font-headline-md text-headline-md font-extrabold tracking-tight ${textColor}`}>
+        <span className={`whitespace-nowrap font-extrabold tracking-tight text-lg sm:text-xl md:text-2xl lg:text-[26px] ${textColor}`}>
           Siyaram Profile
         </span>
       )}

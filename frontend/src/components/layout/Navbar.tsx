@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav
       className="fixed top-0 w-full z-50 bg-[#1D3557]/90 backdrop-blur-md border-b border-white/10 shadow-md transition-shadow duration-300"
     >
-      <div className="flex justify-between items-center max-w-container-max mx-auto px-gutter py-3">
+      <div className="flex justify-between items-center max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter py-2.5 sm:py-3">
         {/* Brand Logo with Official Emblem */}
         <Logo variant="light" />
 

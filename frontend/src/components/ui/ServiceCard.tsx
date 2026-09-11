@@ -25,7 +25,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       </div>
 
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="font-headline-md text-headline-md text-deep-navy mb-3">
+        <h3 className="font-bold text-xl sm:text-2xl text-deep-navy mb-2.5">
           {service.title}
         </h3>
         <p className="font-body-md text-body-md text-deep-navy/80 mb-6 flex-grow leading-relaxed">

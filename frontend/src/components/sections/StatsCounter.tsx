@@ -10,15 +10,15 @@ export default function StatsCounter() {
   ];
 
   return (
-    <section className="py-16 bg-deep-navy text-white border-y border-white/10">
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <section className="py-10 sm:py-12 md:py-16 bg-deep-navy text-white border-y border-white/10">
+      <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center">
           {stats.map((stat, idx) => (
-            <div key={idx} className="p-4 border-r last:border-r-0 border-white/10">
-              <div className="font-stats-num text-4xl md:text-5xl font-extrabold text-primary-fixed mb-2">
+            <div key={idx} className="p-3 sm:p-4 border-r border-white/10 [&:nth-child(2n)]:border-r-0 md:[&:nth-child(2n)]:border-r md:last:border-r-0">
+              <div className="font-stats-num text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary-fixed mb-1 sm:mb-2">
                 {stat.value}
               </div>
-              <div className="font-label-caps text-xs text-white/70 uppercase tracking-wider">
+              <div className="font-label-caps text-[11px] sm:text-xs text-white/70 uppercase tracking-wider">
                 {stat.label}
               </div>
             </div>
