@@ -19,18 +19,18 @@ export default function HomePage() {
       <Hero />
 
       {/* Company Intro Section - Matches home.html */}
-      <section className="py-10 md:py-section-padding bg-white text-deep-navy border-t border-deep-navy/5">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-10 sm:py-16 md:py-20 lg:py-section-padding bg-white text-deep-navy border-t border-deep-navy/5">
+        <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div>
             <SectionHeading
               label="ABOUT SIYARAM PROFILE"
               title="Crafting Quality. Building Confidence"
               subtitle=""
             />
-            <p className="font-body-md text-body-md text-deep-navy/80 mb-6 leading-relaxed">
+            <p className="font-body-md text-sm sm:text-base text-deep-navy/80 mb-4 sm:mb-6 leading-relaxed">
               From M.S. Plate processing to CNC and Profile Cutting, Siyaram Profile delivers dependable manufacturing solutions designed for industrial, agricultural, and engineering applications. Every product reflects our commitment to quality, precision, and customer satisfaction.
             </p>
-            <p className="font-body-md text-body-md text-deep-navy/80 mb-8 leading-relaxed">
+            <p className="font-body-md text-sm sm:text-base text-deep-navy/80 mb-6 sm:mb-8 leading-relaxed">
               Our commitment goes beyond machinery; it&apos;s about a culture of exacting standards, robust quality control, and a deep understanding of metallurgical properties. We don&apos;t just cut steel; we engineer solutions.
             </p>
             <Button href="/about" variant="primary" icon="arrow_forward">
@@ -38,7 +38,7 @@ export default function HomePage() {
             </Button>
           </div>
 
-          <div className="relative h-[400px] border border-primary-container/20 rounded overflow-hidden group">
+          <div className="relative h-[260px] sm:h-[340px] md:h-[400px] border border-primary-container/20 rounded overflow-hidden group mt-4 md:mt-0">
             <div className="absolute inset-0 bg-primary-container/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
             <img
               className="w-full h-full object-cover"
@@ -50,8 +50,8 @@ export default function HomePage() {
       </section>
 
       {/* Services Showcase Section */}
-      <section className="py-10 md:py-section-padding bg-[#CAF0F8] relative z-10">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+      <section className="py-10 sm:py-16 md:py-20 lg:py-section-padding bg-[#CAF0F8] relative z-10">
+        <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter">
           <SectionHeading
             label="CAPABILITIES"
             title="Our Specialized Engineering Services"

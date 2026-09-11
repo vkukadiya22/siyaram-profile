@@ -22,16 +22,16 @@ export default function AboutPage() {
       />
 
       {/* Our Story Section */}
-      <section className="py-10 md:py-section-padding bg-surface-container-low text-on-surface">
-        <div className="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <section className="py-10 sm:py-16 md:py-20 lg:py-section-padding bg-surface-container-low text-on-surface">
+        <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div>
-            <h2 className="font-headline-lg text-headline-lg text-on-surface mb-4 md:mb-6 border-l-4 border-primary-container pl-4 md:pl-6 font-bold">
+            <h2 className="text-2xl sm:text-3xl md:text-headline-lg text-on-surface mb-4 md:mb-6 border-l-4 border-primary-container pl-4 md:pl-6 font-bold">
               Forged in Bhavnagar
             </h2>
-            <p className="font-body-md text-body-md text-on-surface-variant mb-4 md:mb-6 leading-relaxed">
+            <p className="font-body-md text-sm sm:text-base text-on-surface-variant mb-4 md:mb-6 leading-relaxed">
               Established in the industrial heart of Gujarat, Siyaram Profile began with a singular vision: to elevate the standards of precision engineering. What started as a specialized workshop has evolved into a premier manufacturing facility equipped to handle complex, large-scale projects.
             </p>
-            <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6 md:mb-8">
+            <p className="font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed mb-6 md:mb-8">
               Our journey is defined by continuous technological adaptation and a deep-rooted understanding of metallurgical science. We don&apos;t just shape metal; we engineer structural solutions that form the backbone of modern infrastructure.
             </p>
 
@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div className="relative group mt-4 lg:mt-0">
             <div className="absolute inset-0 bg-primary-container/10 -translate-x-2 translate-y-2 md:-translate-x-4 md:translate-y-4 border border-outline-variant/50 rounded" />
             <div
-              className="relative z-10 w-full h-[320px] sm:h-[400px] md:h-[500px] bg-cover bg-center rounded border border-outline-variant/50 transition-all duration-700"
+              className="relative z-10 w-full h-[260px] sm:h-[360px] md:h-[500px] bg-cover bg-center rounded border border-outline-variant/50 transition-all duration-700"
               style={{
                 backgroundImage: `url('/factory2.webp')`,
               }}
@@ -68,24 +68,24 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-10 md:py-section-padding bg-white border-y border-outline-variant/30">
-        <div className="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
-          <div className="glass-panel p-6 md:p-10 border border-outline-variant/50 rounded hover:border-primary-container transition-colors duration-500 bg-surface-container-lowest shadow-sm hover:shadow-md">
+      <section className="py-10 sm:py-16 md:py-20 lg:py-section-padding bg-white border-y border-outline-variant/30">
+        <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+          <div className="glass-panel p-5 sm:p-8 md:p-10 border border-outline-variant/50 rounded hover:border-primary-container transition-colors duration-500 bg-surface-container-lowest shadow-sm hover:shadow-md">
             <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 md:mb-6">
               <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">explore</span>
             </div>
-            <h3 className="font-title-md text-title-md text-on-surface mb-3 md:mb-4 font-bold">Our Mission</h3>
-            <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            <h3 className="font-title-md text-xl sm:text-title-md text-on-surface mb-3 md:mb-4 font-bold">Our Mission</h3>
+            <p className="font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed">
               To deliver unparalleled precision engineering components that drive industrial progress. We commit to utilizing advanced manufacturing technologies and stringent quality controls to exceed client specifications on every project.
             </p>
           </div>
 
-          <div className="glass-panel p-6 md:p-10 border border-outline-variant/50 rounded hover:border-primary-container transition-colors duration-500 bg-surface-container-lowest shadow-sm hover:shadow-md">
+          <div className="glass-panel p-5 sm:p-8 md:p-10 border border-outline-variant/50 rounded hover:border-primary-container transition-colors duration-500 bg-surface-container-lowest shadow-sm hover:shadow-md">
             <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 md:mb-6">
               <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">visibility</span>
             </div>
-            <h3 className="font-title-md text-title-md text-on-surface mb-3 md:mb-4 font-bold">Our Vision</h3>
-            <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            <h3 className="font-title-md text-xl sm:text-title-md text-on-surface mb-3 md:mb-4 font-bold">Our Vision</h3>
+            <p className="font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed">
               To be recognized globally as the definitive standard for industrial profile manufacturing, fostering a future where structural integrity and innovative engineering seamlessly integrate to build robust, sustainable infrastructure.
             </p>
           </div>
@@ -93,8 +93,8 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-10 md:py-section-padding bg-surface-container-low">
-        <div className="max-w-container-max mx-auto px-gutter">
+      <section className="py-10 sm:py-16 md:py-20 lg:py-section-padding bg-surface-container-low">
+        <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter">
           <SectionHeading
             label="MILESTONES"
             title="Our Journey Through The Years"
@@ -106,16 +106,16 @@ export default function AboutPage() {
       </section>
 
       {/* Infrastructure Showcase */}
-      <section className="py-10 md:py-section-padding bg-white text-on-surface border-t border-outline-variant/30">
-        <div className="max-w-container-max mx-auto px-gutter">
+      <section className="py-10 sm:py-16 md:py-20 lg:py-section-padding bg-white text-on-surface border-t border-outline-variant/30">
+        <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter">
           <SectionHeading
             label="FACILITY"
             title="Advanced Infrastructure"
             subtitle="Our facility houses state-of-the-art CNC centers and specialized fabrication equipment capable of handling massive structural elements."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 md:mt-8">
-            <div className="relative h-64 overflow-hidden group rounded">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 md:mt-8">
+            <div className="relative h-56 sm:h-64 overflow-hidden group rounded">
               <div
                 className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-all duration-700"
                 style={{

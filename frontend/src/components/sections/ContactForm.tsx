@@ -58,9 +58,9 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-surface-container-low p-8 rounded border border-outline-variant relative overflow-hidden">
+    <div className="bg-surface-container-low p-5 sm:p-8 rounded border border-outline-variant relative overflow-hidden">
       <div className="relative z-10">
-        <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6">
+        <h2 className="font-bold text-2xl sm:text-headline-lg text-on-surface mb-4 sm:mb-6">
           Send an Inquiry
         </h2>
 

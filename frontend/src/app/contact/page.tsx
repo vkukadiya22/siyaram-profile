@@ -13,29 +13,29 @@ export default function ContactPage() {
   return (
     <div className="bg-surface-container-lowest text-on-surface flex flex-col min-h-screen">
       <main className="flex-grow pt-20 sm:pt-24 pb-12 md:pb-16">
-        <section className="max-w-container-max mx-auto px-gutter">
+        <section className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter">
           <Breadcrumb items={[{ label: "Contact Us" }]} variant="dark" />
 
-          <div className="mb-8 md:mb-12 mt-2">
-            <h1 className="font-headline-xl text-headline-xl md:font-headline-lg-mobile md:text-headline-lg text-on-surface mb-3 md:mb-4">
+          <div className="mb-6 md:mb-12 mt-2">
+            <h1 className="text-3xl sm:text-4xl md:text-headline-xl text-on-surface mb-3 md:mb-4 font-bold">
               Get in Touch
             </h1>
-            <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+            <p className="font-body-md text-sm sm:text-base md:text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
               Connect with our engineering experts to discuss your project requirements. We provide precision solutions for industrial scale operations.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-gutter">
             {/* Left Column: Contact Form */}
             <div className="md:col-span-7">
               <ContactForm />
             </div>
 
             {/* Right Column: Contact Details & Map */}
-            <div className="md:col-span-5 space-y-gutter">
+            <div className="md:col-span-5 space-y-6 md:space-y-gutter">
               {/* Contact Info Card */}
-              <div className="bg-surface-container-low p-8 rounded border border-outline-variant text-on-surface shadow-sm">
-                <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6">
+              <div className="bg-surface-container-low p-5 sm:p-8 rounded border border-outline-variant text-on-surface shadow-sm">
+                <h2 className="font-bold text-2xl sm:text-headline-lg text-on-surface mb-6">
                   Contact Details
                 </h2>
 

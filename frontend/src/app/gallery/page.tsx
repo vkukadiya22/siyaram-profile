@@ -217,8 +217,8 @@ export default function GalleryPage() {
         breadcrumbs={[{ label: "Gallery" }]}
       />
 
-      <section className="py-section-padding bg-surface-container-low">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+      <section className="py-10 sm:py-16 md:py-20 bg-surface-container-low">
+        <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter">
           <SectionHeading
             label="VISUAL OVERVIEW"
             title="Factory & Component Showcase"
@@ -226,12 +226,12 @@ export default function GalleryPage() {
           />
 
           {/* Category Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
             {CATEGORIES.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`font-label-caps text-xs px-6 py-3 rounded transition-all duration-300 font-bold uppercase tracking-wider ${
+                className={`font-label-caps text-[11px] sm:text-xs px-3.5 py-2 sm:px-6 sm:py-3 rounded transition-all duration-300 font-bold uppercase tracking-wider ${
                   activeCategory === cat
                     ? "bg-primary-container text-white shadow-sm"
                     : "bg-white border border-outline-variant/40 text-deep-navy hover:bg-surface-variant"
@@ -243,7 +243,7 @@ export default function GalleryPage() {
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {filteredItems.map((item) => (
               <GalleryCard
                 key={item.id}
@@ -261,31 +261,31 @@ export default function GalleryPage() {
       {/* Fullscreen Lightbox Modal */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-2 sm:p-4"
           onClick={() => setSelectedImage(null)}
         >
           <div 
-            className="relative max-w-4xl w-full bg-deep-navy border border-white/20 rounded-lg overflow-hidden"
+            className="relative max-w-4xl w-full bg-deep-navy border border-white/20 rounded-lg overflow-hidden my-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 text-white bg-white/10 hover:bg-white/30 rounded-full p-2 z-10 transition-colors"
+              className="absolute top-3 right-3 sm:top-4 sm:right-4 text-white bg-black/60 hover:bg-black/80 rounded-full p-2 z-20 transition-colors"
             >
-              <span className="material-symbols-outlined text-2xl">close</span>
+              <span className="material-symbols-outlined text-xl sm:text-2xl">close</span>
             </button>
-            <div className="h-[500px] w-full relative bg-black">
+            <div className="h-[260px] xs:h-[320px] sm:h-[420px] md:h-[500px] max-h-[60vh] w-full relative bg-black flex items-center justify-center">
               <img
                 src={selectedImage.image}
                 alt={selectedImage.alt}
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="p-6 bg-deep-navy text-white">
-              <span className="font-label-caps text-xs text-primary-fixed block mb-1">
+            <div className="p-4 sm:p-6 bg-deep-navy text-white">
+              <span className="font-label-caps text-[11px] sm:text-xs text-primary-fixed block mb-1">
                 {selectedImage.category}
               </span>
-              <h3 className="font-headline-md text-xl font-bold">{selectedImage.title}</h3>
+              <h3 className="font-headline-md text-lg sm:text-xl font-bold">{selectedImage.title}</h3>
             </div>
           </div>
         </div>
