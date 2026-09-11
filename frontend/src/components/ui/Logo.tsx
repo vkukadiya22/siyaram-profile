@@ -27,8 +27,8 @@ export default function Logo({
     >
       {/* Expanded Official Logo Container with Responsive Dimensions */}
       <div
-        className="relative flex-shrink-0 rounded-full bg-white p-0.5 shadow-md border-2 border-white/90 flex items-center justify-center overflow-hidden w-11 h-11 sm:w-12 sm:h-12 md:w-[52px] md:h-[52px]"
-        style={{ borderRadius: '9999px', ...(size ? { width: `${size}px`, height: `${size}px` } : {}) }}
+        className="relative flex-shrink-0 rounded-xl bg-white p-0.5 shadow-md border-2 border-white/90 flex items-center justify-center overflow-hidden w-11 h-11 sm:w-12 sm:h-12 md:w-[52px] md:h-[52px]"
+        style={size ? { width: `${size}px`, height: `${size}px` } : undefined}
       >
         {!imgError ? (
           <img
