@@ -40,6 +40,9 @@ export function constructMetadata({
     },
     icons,
     metadataBase: new URL('https://siyaramprofile.in'),
+    verification: {
+      google: '_tlkhm2RelaQidNJLQfvVq1-yvQjw-ROCtdd3aO92JA',
+    },
     ...(noIndex && {
       robots: {
         index: false,
