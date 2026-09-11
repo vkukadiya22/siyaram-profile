@@ -92,7 +92,7 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block font-label-caps text-label-caps text-on-surface mb-2" htmlFor="name">
-                Full Name *
+                Full Name / Company *
               </label>
               <input
                 id="name"
@@ -102,7 +102,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3 text-on-surface"
-                placeholder="Enter your name"
+                placeholder="Your Name / Company Name"
               />
             </div>
             <div>
