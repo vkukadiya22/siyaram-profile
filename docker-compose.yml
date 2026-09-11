@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: siyaram_db
+    environment:
+      POSTGRES_DB: siyaram_db
+      POSTGRES_USER: siyaram_user
+      POSTGRES_PASSWORD: siyaram_secure_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  backend:
+    build: ./backend
+    container_name: siyaram_backend
+    environment:
+      - SECRET_KEY=production-super-secret-key
+      - DEBUG=False
+      - ALLOWED_HOSTS=*
+      - DATABASE_URL=postgres://siyaram_user:siyaram_secure_password@db:5432/siyaram_db
+      - EMAIL_HOST=smtp.gmail.com
+      - EMAIL_PORT=587
+      - EMAIL_USE_TLS=True
+      - EMAIL_HOST_USER=${EMAIL_HOST_USER:-siyaramprofile82@gmail.com}
+      - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD}
+      - DEFAULT_FROM_EMAIL=${DEFAULT_FROM_EMAIL:-siyaramprofile82@gmail.com}
+    depends_on:
+      - db
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: siyaram_frontend
+    environment:
+      - NODE_ENV=production
+      - GMAIL_USER=${GMAIL_USER:-siyaramprofile82@gmail.com}
+      - GMAIL_APP_PASSWORD=${GMAIL_APP_PASSWORD}
+      - RECIPIENT_EMAIL=${RECIPIENT_EMAIL:-siyaramprofile82@gmail.com}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: always
+
+  nginx:
+    image: nginx:alpine
+    container_name: siyaram_nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - frontend
+      - backend
+    restart: always
+
+volumes:
+  postgres_data:
