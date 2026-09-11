@@ -19,8 +19,8 @@ export default function Timeline() {
     },
     {
       year: "2024+",
-      title: "Industry Leader & Global Delivery",
-      description: "Delivered over 500+ major projects across heavy engineering, infrastructure, and agricultural OEM sectors."
+      title: "Industry Leader & Regional Delivery",
+      description: "Delivered over 610+ precision projects across heavy engineering, infrastructure, and agricultural OEM sectors."
     }
   ];
 

@@ -42,8 +42,8 @@ export const COMPANY_INFO = {
   workingHours: "Mon - Sat: 8:00 AM - 6:00 PM",
   yearEstablished: 2014,
   yearsOfExcellence: "20+",
-  projectsDelivered: "500+",
-  clientsServed: "120+",
+  projectsDelivered: "610+",
+  clientsServed: "140+",
   defectFreeRate: "100%",
 };
 

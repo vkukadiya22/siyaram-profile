@@ -102,7 +102,6 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3"
-                placeholder="Enter your full name"
               />
             </div>
             <div>
@@ -117,7 +116,6 @@ export default function ContactForm() {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3"
-                placeholder="+91 98765 43210"
               />
             </div>
           </div>
@@ -134,7 +132,6 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3"
-                placeholder="name@company.com"
               />
             </div>
 
@@ -149,7 +146,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3 appearance-none"
               >
-                <option value="">Select your industry</option>
+                <option value="">Select Industry</option>
                 <option value="Manufacturing">Manufacturing</option>
                 <option value="Construction">Construction</option>
                 <option value="Infrastructure">Infrastructure</option>
@@ -172,7 +169,6 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               className="w-full form-input-technical px-4 py-3"
-              placeholder="Describe your project specifications, steel grade, plate thickness, or quantity..."
             />
           </div>
 
