@@ -102,7 +102,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3 text-on-surface"
-                placeholder="Your Name or Company Name"
+                placeholder="Enter your full name"
               />
             </div>
             <div>
@@ -117,7 +117,7 @@ export default function ContactForm() {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3 text-on-surface"
-                placeholder="Enter 10-digit mobile number"
+                placeholder="+91 98765 43210"
               />
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block font-label-caps text-label-caps text-on-surface mb-2" htmlFor="email">
-                Email Address <span className="text-on-surface-variant font-normal normal-case text-xs">(Optional)</span>
+                Email Address 
               </label>
               <input
                 id="email"
@@ -134,7 +134,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3 text-on-surface"
-                placeholder="yourname@gmail.com (Optional)"
+                placeholder="name@company.com"
               />
             </div>
 
@@ -149,7 +149,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3 appearance-none text-on-surface"
               >
-                <option value="">Select Industry</option>
+                <option value="">Select your industry</option>
                 <option value="Manufacturing">Manufacturing</option>
                 <option value="Construction">Construction</option>
                 <option value="Infrastructure">Infrastructure</option>
@@ -172,7 +172,7 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               className="w-full form-input-technical px-4 py-3 text-on-surface"
-              placeholder="Enter cutting details: plate thickness (mm), size, or quantity..."
+              placeholder="Describe your project specifications, steel grade, plate thickness, or quantity..."
             />
           </div>
 
