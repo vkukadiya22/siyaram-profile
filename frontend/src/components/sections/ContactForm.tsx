@@ -102,7 +102,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full form-input-technical px-4 py-3 text-on-surface"
-                placeholder="Enter your full name"
+                placeholder="Enter your name"
               />
             </div>
             <div>
@@ -172,7 +172,7 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               className="w-full form-input-technical px-4 py-3 text-on-surface"
-              placeholder="Describe your project specifications, steel grade, plate thickness, or quantity..."
+              placeholder="Leave us a message..."
             />
           </div>
 
