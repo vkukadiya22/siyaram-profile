@@ -101,7 +101,8 @@ export default function ContactForm() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full form-input-technical px-4 py-3"
+                className="w-full form-input-technical px-4 py-3 text-on-surface"
+                placeholder="Your Name or Company Name"
               />
             </div>
             <div>
@@ -115,7 +116,8 @@ export default function ContactForm() {
                 required
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full form-input-technical px-4 py-3"
+                className="w-full form-input-technical px-4 py-3 text-on-surface"
+                placeholder="Enter 10-digit mobile number"
               />
             </div>
           </div>
@@ -123,7 +125,7 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block font-label-caps text-label-caps text-on-surface mb-2" htmlFor="email">
-                Email Address 
+                Email Address <span className="text-on-surface-variant font-normal normal-case text-xs">(Optional)</span>
               </label>
               <input
                 id="email"
@@ -131,7 +133,8 @@ export default function ContactForm() {
                 type="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full form-input-technical px-4 py-3"
+                className="w-full form-input-technical px-4 py-3 text-on-surface"
+                placeholder="yourname@gmail.com (Optional)"
               />
             </div>
 
@@ -144,7 +147,7 @@ export default function ContactForm() {
                 name="industry"
                 value={formData.industry}
                 onChange={handleChange}
-                className="w-full form-input-technical px-4 py-3 appearance-none"
+                className="w-full form-input-technical px-4 py-3 appearance-none text-on-surface"
               >
                 <option value="">Select Industry</option>
                 <option value="Manufacturing">Manufacturing</option>
@@ -168,7 +171,8 @@ export default function ContactForm() {
               required
               value={formData.message}
               onChange={handleChange}
-              className="w-full form-input-technical px-4 py-3"
+              className="w-full form-input-technical px-4 py-3 text-on-surface"
+              placeholder="Enter cutting details: plate thickness (mm), size, or quantity..."
             />
           </div>
 
