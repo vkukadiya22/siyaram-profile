@@ -84,6 +84,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-hanken-grotesk)", "sans-serif"],
         mono: ["var(--font-jetbrains-mono)", "monospace"],
+        rajdhani: ["var(--font-rajdhani)", "sans-serif"],
         "body-md": ["var(--font-hanken-grotesk)", "sans-serif"],
         "title-md": ["var(--font-hanken-grotesk)", "sans-serif"],
         "headline-lg": ["var(--font-hanken-grotesk)", "sans-serif"],

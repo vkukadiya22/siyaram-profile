@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-rajdhani {
+  font-family: 'Rajdhani', var(--font-rajdhani), sans-serif;
+}
 
 @layer base {
   body {

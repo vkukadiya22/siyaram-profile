@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Hanken_Grotesk, JetBrains_Mono, Rajdhani } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -21,6 +21,13 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+const rajdhani = Rajdhani({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  variable: "--font-rajdhani",
+  display: "swap",
+});
+
 export const metadata: Metadata = constructMetadata();
 
 export default function RootLayout({
@@ -31,8 +38,14 @@ export default function RootLayout({
   const jsonLd = getOrganizationSchema();
 
   return (
-    <html lang="en" className={`${hankenGrotesk.variable} ${jetbrainsMono.variable} scroll-smooth`}>
+    <html lang="en" className={`${hankenGrotesk.variable} ${jetbrainsMono.variable} ${rajdhani.variable} scroll-smooth`}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap"
+        />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"

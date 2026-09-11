@@ -74,9 +74,9 @@ export default function Logo({
         )}
       </div>
 
-      {/* Brand Text - Big, Bold & Single Line Guaranteed */}
+      {/* Brand Text - Big, Bold & Single Line Guaranteed (Option 2: Rajdhani) */}
       {showText && (
-        <span className={`whitespace-nowrap font-extrabold tracking-tight text-[22px] sm:text-2xl md:text-[28px] lg:text-[30px] ${textColor}`}>
+        <span className={`whitespace-nowrap font-rajdhani font-bold tracking-wider text-[24px] sm:text-[26px] md:text-[30px] lg:text-[32px] leading-tight ${textColor}`}>
           Siyaram Profile
         </span>
       )}
