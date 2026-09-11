@@ -4,6 +4,7 @@ import Timeline from "@/components/sections/Timeline";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { COMPANY_INFO } from "@/lib/constants";
 import { constructMetadata } from "@/lib/metadata";
+import { Compass, Eye } from "lucide-react";
 
 export const metadata = constructMetadata({
   title: "About Us - Our Legacy of Precision",
@@ -72,7 +73,7 @@ export default function AboutPage() {
         <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           <div className="glass-panel p-5 sm:p-8 md:p-10 border border-outline-variant/50 rounded hover:border-primary-container transition-colors duration-500 bg-surface-container-lowest shadow-sm hover:shadow-md">
             <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 md:mb-6">
-              <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">explore</span>
+              <Compass className="w-6 h-6 md:w-8 md:h-8 text-primary" />
             </div>
             <h3 className="font-title-md text-xl sm:text-title-md text-on-surface mb-3 md:mb-4 font-bold">Our Mission</h3>
             <p className="font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed">
@@ -82,7 +83,7 @@ export default function AboutPage() {
 
           <div className="glass-panel p-5 sm:p-8 md:p-10 border border-outline-variant/50 rounded hover:border-primary-container transition-colors duration-500 bg-surface-container-lowest shadow-sm hover:shadow-md">
             <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 md:mb-6">
-              <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">visibility</span>
+              <Eye className="w-6 h-6 md:w-8 md:h-8 text-primary" />
             </div>
             <h3 className="font-title-md text-xl sm:text-title-md text-on-surface mb-3 md:mb-4 font-bold">Our Vision</h3>
             <p className="font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed">

@@ -1,6 +1,38 @@
 import React from "react";
 import Link from "next/link";
 import { ServiceItem, COMPANY_INFO } from "@/lib/constants";
+import { 
+  Cpu, 
+  Disc, 
+  Layers, 
+  Tractor, 
+  Wrench, 
+  Scissors, 
+  Building2, 
+  CheckCircle2, 
+  ArrowRight 
+} from "lucide-react";
+
+function getServiceIcon(iconName: string) {
+  switch (iconName) {
+    case "precision_manufacturing":
+      return <Cpu className="w-5 h-5 text-[#0077B6]" />;
+    case "trip_origin":
+      return <Disc className="w-5 h-5 text-[#0077B6]" />;
+    case "layers":
+      return <Layers className="w-5 h-5 text-[#0077B6]" />;
+    case "agriculture":
+      return <Tractor className="w-5 h-5 text-[#0077B6]" />;
+    case "settings_suggest":
+      return <Wrench className="w-5 h-5 text-[#0077B6]" />;
+    case "content_cut":
+      return <Scissors className="w-5 h-5 text-[#0077B6]" />;
+    case "foundation":
+      return <Building2 className="w-5 h-5 text-[#0077B6]" />;
+    default:
+      return <Wrench className="w-5 h-5 text-[#0077B6]" />;
+  }
+}
 
 interface ServiceCardProps {
   service: ServiceItem;
@@ -17,10 +49,8 @@ export default function ServiceCard({ service }: ServiceCardProps) {
           style={{ backgroundImage: `url('${service.image}')` }}
           aria-label={service.alt}
         />
-        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur p-2 rounded border border-[#0077B6]/20 shadow-sm">
-          <span className="material-symbols-outlined text-[#0077B6]">
-            {service.icon}
-          </span>
+        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur p-2 rounded border border-[#0077B6]/20 shadow-sm flex items-center justify-center">
+          {getServiceIcon(service.icon)}
         </div>
       </div>
 
@@ -36,9 +66,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
           <ul className="mb-6 space-y-1 border-t border-deep-navy/10 pt-4">
             {service.features.map((feature, idx) => (
               <li key={idx} className="flex items-center text-xs font-label-caps text-deep-navy/70">
-                <span className="material-symbols-outlined text-[14px] text-primary-container mr-1">
-                  check_circle
-                </span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-primary-container mr-1.5 flex-shrink-0" />
                 {feature}
               </li>
             ))}
@@ -53,9 +81,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
             className="inline-flex items-center text-primary-container hover:text-primary font-label-caps text-label-caps uppercase group/btn font-bold transition-colors"
           >
             Inquire Now
-            <span className="material-symbols-outlined ml-2 group-hover/btn:translate-x-1 transition-transform text-[16px]">
-              arrow_forward
-            </span>
+            <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
           </a>
         </div>
       </div>

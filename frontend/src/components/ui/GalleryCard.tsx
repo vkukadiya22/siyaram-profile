@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { ZoomIn } from "lucide-react";
 
 interface GalleryCardProps {
   title: string;
@@ -38,8 +39,8 @@ export default function GalleryCard({
             {title}
           </h3>
         </div>
-        <div className="p-2 rounded-full bg-primary-container text-white opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 duration-300">
-          <span className="material-symbols-outlined text-[18px]">zoom_in</span>
+        <div className="p-2 rounded-full bg-primary-container text-white opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 duration-300 flex items-center justify-center">
+          <ZoomIn className="w-4 h-4 text-white" />
         </div>
       </div>
     </div>

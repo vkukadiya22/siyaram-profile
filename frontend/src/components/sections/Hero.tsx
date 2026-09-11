@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@/components/ui/Button";
 import { COMPANY_INFO } from "@/lib/constants";
+import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -41,7 +42,7 @@ export default function Hero() {
       {/* Scroll Indicator */}
       <div className="hidden sm:flex absolute bottom-3 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex-col items-center gap-1 md:gap-2 animate-bounce text-white/70">
         <span className="font-label-caps text-label-caps text-[9px] md:text-[10px]">SCROLL</span>
-        <span className="material-symbols-outlined text-[14px] md:text-[16px]">south</span>
+        <ArrowDown className="w-3.5 h-3.5 md:w-4 md:h-4 text-white/70" />
       </div>
     </section>
   );

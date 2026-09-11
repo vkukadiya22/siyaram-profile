@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_ITEMS } from "@/lib/constants";
 import Logo from "@/components/ui/Logo";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -49,14 +50,14 @@ export default function Navbar() {
         {/* Mobile Menu Toggle Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-white p-2 focus:outline-none active:scale-90"
+          className="md:hidden text-white p-2 focus:outline-none active:scale-90 flex items-center justify-center"
           aria-label="Toggle Navigation Menu"
         >
-          <span className={`material-symbols-outlined text-2xl transition-transform duration-300 ease-in-out block ${
-            mobileMenuOpen ? "rotate-90 text-primary-fixed" : "rotate-0 text-white"
-          }`}>
-            {mobileMenuOpen ? "close" : "menu"}
-          </span>
+          {mobileMenuOpen ? (
+            <X className="w-6 h-6 text-primary-fixed transition-transform duration-200" />
+          ) : (
+            <Menu className="w-6 h-6 text-white transition-transform duration-200" />
+          )}
         </button>
       </div>
 

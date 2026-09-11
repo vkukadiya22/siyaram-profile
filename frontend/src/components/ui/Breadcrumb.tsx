@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 interface BreadcrumbItem {
   label: string;
@@ -31,9 +32,9 @@ export default function Breadcrumb({ items, variant = "light" }: BreadcrumbProps
         </li>
         {items.map((item, index) => (
           <li key={index} className="flex items-center space-x-2">
-            <span className={`material-symbols-outlined text-[14px] ${
+            <ChevronRight className={`w-3.5 h-3.5 ${
               isDarkVariant ? "text-outline" : "text-white/50"
-            }`}>chevron_right</span>
+            }`} />
             {item.href ? (
               <Link
                 href={item.href}

@@ -40,15 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${hankenGrotesk.variable} ${jetbrainsMono.variable} ${rajdhani.variable} scroll-smooth`}>
       <head>
+        <link rel="preload" as="image" href="/siyaram_profile_sm.webp" type="image/webp" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
         <script
           type="application/ld+json"

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import PageBanner from "@/components/ui/PageBanner";
 import GalleryCard from "@/components/ui/GalleryCard";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { X } from "lucide-react";
 
 interface GalleryItem {
   id: string;
@@ -270,9 +271,10 @@ export default function GalleryPage() {
           >
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-3 right-3 sm:top-4 sm:right-4 text-white bg-black/60 hover:bg-black/80 rounded-full p-2 z-20 transition-colors"
+              className="absolute top-3 right-3 sm:top-4 sm:right-4 text-white bg-black/60 hover:bg-black/80 rounded-full p-2 z-20 transition-colors flex items-center justify-center"
+              aria-label="Close Preview"
             >
-              <span className="material-symbols-outlined text-xl sm:text-2xl">close</span>
+              <X className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
             <div className="h-[260px] xs:h-[320px] sm:h-[420px] md:h-[500px] max-h-[60vh] w-full relative bg-black flex items-center justify-center">
               <img

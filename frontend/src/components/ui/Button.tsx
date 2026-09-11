@@ -2,14 +2,33 @@ import React from "react";
 import Link from "next/link";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { ArrowRight, Send, RotateCcw, Home } from "lucide-react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "outline" | "ghost" | "whatsapp";
   size?: "sm" | "md" | "lg";
   href?: string;
-  icon?: string;
+  icon?: string | React.ReactNode;
   iconPosition?: "left" | "right";
   children: React.ReactNode;
+}
+
+function renderButtonIcon(icon: React.ReactNode | string) {
+  if (!icon) return null;
+  if (typeof icon !== "string") return icon;
+  switch (icon) {
+    case "arrow_forward":
+    case "arrow-right":
+      return <ArrowRight className="w-4 h-4 flex-shrink-0" />;
+    case "send":
+      return <Send className="w-4 h-4 flex-shrink-0" />;
+    case "refresh":
+      return <RotateCcw className="w-4 h-4 flex-shrink-0" />;
+    case "home":
+      return <Home className="w-4 h-4 flex-shrink-0" />;
+    default:
+      return <ArrowRight className="w-4 h-4 flex-shrink-0" />;
+  }
 }
 
 export default function Button({
@@ -44,13 +63,9 @@ export default function Button({
 
   const content = (
     <>
-      {icon && iconPosition === "left" && (
-        <span className="material-symbols-outlined text-[16px]">{icon}</span>
-      )}
+      {icon && iconPosition === "left" && renderButtonIcon(icon)}
       <span>{children}</span>
-      {icon && iconPosition === "right" && (
-        <span className="material-symbols-outlined text-[16px]">{icon}</span>
-      )}
+      {icon && iconPosition === "right" && renderButtonIcon(icon)}
     </>
   );
 

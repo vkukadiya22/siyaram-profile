@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import Button from "@/components/ui/Button";
+import { AlertTriangle } from "lucide-react";
 
 export default function Error({
   error,
@@ -19,7 +20,7 @@ export default function Error({
     <div className="min-h-[70vh] flex items-center justify-center bg-surface-container-low px-gutter py-12 md:py-section-padding text-center">
       <div className="max-w-md mx-auto space-y-6">
         <div className="w-16 h-16 rounded-full bg-error-container/20 text-error flex items-center justify-center mx-auto">
-          <span className="material-symbols-outlined text-4xl">warning</span>
+          <AlertTriangle className="w-8 h-8 text-error" />
         </div>
         <h1 className="font-headline-lg text-2xl font-bold text-deep-navy">
           Something Went Wrong

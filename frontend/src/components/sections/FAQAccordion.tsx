@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { FAQ_LIST } from "@/lib/constants";
+import { ChevronDown } from "lucide-react";
 
 type Language = "en" | "gu" | "hi";
 
@@ -72,9 +73,7 @@ export default function FAQAccordion() {
                 <span className="font-headline-md text-base md:text-lg font-bold text-deep-navy leading-snug">
                   {questionText}
                 </span>
-                <span className={`material-symbols-outlined text-primary-container text-2xl transition-transform duration-300 flex-shrink-0 ${isOpen ? "rotate-180" : ""}`}>
-                  expand_more
-                </span>
+                <ChevronDown className={`text-primary-container w-6 h-6 transition-transform duration-300 flex-shrink-0 ${isOpen ? "rotate-180" : ""}`} />
               </button>
 
               {isOpen && (
