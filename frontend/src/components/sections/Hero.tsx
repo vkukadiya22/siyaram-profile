@@ -10,7 +10,7 @@ export default function Hero() {
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url('/hero_home.png')`,
+            backgroundImage: `url('/hero_home.webp')`,
           }}
           aria-label="Siyaram Profile industrial steel engineering"
         />

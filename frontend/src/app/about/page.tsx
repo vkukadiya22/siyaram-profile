@@ -60,7 +60,7 @@ export default function AboutPage() {
             <div
               className="relative z-10 w-full h-[320px] sm:h-[400px] md:h-[500px] bg-cover bg-center rounded border border-outline-variant/50 transition-all duration-700"
               style={{
-                backgroundImage: `url('/factory2.png')`,
+                backgroundImage: `url('/factory2.webp')`,
               }}
             />
           </div>
@@ -119,7 +119,7 @@ export default function AboutPage() {
               <div
                 className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-all duration-700"
                 style={{
-                  backgroundImage: `url('/factory4.png')`,
+                  backgroundImage: `url('/factory4.webp')`,
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-deep-navy/80 to-transparent opacity-90" />

@@ -61,7 +61,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "CNC Cutting",
     description: "High-tolerance precision cutting utilizing advanced computer numerical control technology for complex geometries and exact specifications.",
     icon: "precision_manufacturing",
-    image: "/cnc-cutting.png",
+    image: "/cnc-cutting.webp",
     alt: "Automated CNC cutting machine head",
     features: ["High-quality cutting", "Custom dimensions", "Industrial applications"]
   },
@@ -70,7 +70,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "Profile Cutting",
     description: "Custom shape extraction from heavy M.S. plates, ensuring minimal material waste and exact dimensional adherence for structural frameworks.",
     icon: "architecture",
-    image: "/profile-cutting.png",
+    image: "/profile-cutting.webp",
     alt: "Heavy gauge steel plates",
     features: ["Custom shapes", "Custom CAD/CAM Conversion","Minimal material waste"]
   },
@@ -79,7 +79,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "Circle Cutting",
     description: "Flawless circular cuts engineered for flanges, pressure vessels, and heavy-duty rotational components requiring absolute symmetry.",
     icon: "trip_origin",
-    image: "/circle-cutting.png",
+    image: "/circle-cutting.webp",
     alt: "Circular steel flanges",
     features: ["Multiple sizes", "Smooth finish", "Accurate dimensions"]
   },
@@ -88,7 +88,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "M.S. Plate Supply",
     description: "Premium grade Mild Steel plates sourced and supplied to exact thickness and metallurgical requirements for heavy fabrication.",
     icon: "layers",
-    image: "/profile-plate2.png",
+    image: "/profile-plate2.webp",
     alt: "Mild steel plates stock",
     features: ["Various thicknesses", "Custom Sizing & Slitting", "Quality material"]
   },
@@ -97,7 +97,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "Agro Parts",
     description: "Robust and durable manufacturing of specialized components designed to withstand the brutal conditions of heavy agricultural equipment.",
     icon: "agriculture",
-    image: "/agro-parts.png",
+    image: "/agro-parts.webp",
     alt: "Agricultural steel parts",
     features: ["Strong construction", "Reliable performance", "Custom manufacturing"]
   },
@@ -106,7 +106,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "Engineering Parts",
     description: "Bespoke engineering solutions delivering custom-machined parts that integrate seamlessly into complex industrial machinery.",
     icon: "settings_suggest",
-    image: "/engineering-parts.png",
+    image: "/engineering-parts.webp",
     alt: "Custom engineered parts",
     features: ["Custom fabrication", "Industrial components", "Quality workmanship"]
   },
@@ -115,7 +115,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "Cultivator Tyne & Implement Parts",
     description: "Heavy-duty agricultural cultivator tynes (Tota Panja Front Tyne) and implement wear components built for high durability and soil penetration.",
     icon: "agriculture",
-    image: "/tota-panja-tyne.png",
+    image: "/tota-panja-tyne.webp",
     alt: "Tota Panja Front Tyne agricultural implement component",
     features: ["High wear resistance", "Forged strength", "Custom implement fitting"]
   },
@@ -124,7 +124,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "Custom Metal Blanking & Cutting",
     description: "Batch precision cutting and blanking of mild steel components ready for immediate assembly and structural integration.",
     icon: "content_cut",
-    image: "/cutting-mall.png",
+    image: "/cutting-mall.webp",
     alt: "Custom cut profile metal components",
     features: ["Batch production", "Clean cut edges", "Ready for assembly"]
   },
@@ -133,7 +133,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "Heavy Profile Plates",
     description: "Thick gauge M.S. profile plates engineered for heavy machinery bases, crane girders, and industrial foundation brackets.",
     icon: "foundation",
-    image: "/profile-plate1.png",
+    image: "/profile-plate1.webp",
     alt: "Heavy structural profile steel plate",
     features: ["Thick gauge capacity", "High load strength", "Custom geometry"]
   }

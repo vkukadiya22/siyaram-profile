@@ -43,7 +43,7 @@ export default function HomePage() {
             <img
               className="w-full h-full object-cover"
               alt="Siyaram Profile industrial factory workshop floor in Bhavnagar"
-              src="/factory.png"
+              src="/factory.webp"
             />
           </div>
         </div>
