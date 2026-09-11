@@ -27,7 +27,7 @@ export default function Logo({
     >
       {/* Expanded Official Logo Container with Responsive Dimensions */}
       <div
-        className="relative flex-shrink-0 rounded-full bg-white p-0.5 shadow-md border-2 border-white/90 flex items-center justify-center overflow-hidden w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12"
+        className="relative flex-shrink-0 rounded-full bg-white p-0.5 shadow-md border-2 border-white/90 flex items-center justify-center overflow-hidden w-11 h-11 sm:w-12 sm:h-12 md:w-[52px] md:h-[52px]"
         style={size ? { width: `${size}px`, height: `${size}px` } : undefined}
       >
         {!imgError ? (
@@ -74,9 +74,9 @@ export default function Logo({
         )}
       </div>
 
-      {/* Brand Text - Single Line Guaranteed & Responsively Scaled */}
+      {/* Brand Text - Big, Bold & Single Line Guaranteed */}
       {showText && (
-        <span className={`whitespace-nowrap font-extrabold tracking-tight text-lg sm:text-xl md:text-2xl lg:text-[26px] ${textColor}`}>
+        <span className={`whitespace-nowrap font-extrabold tracking-tight text-[22px] sm:text-2xl md:text-[28px] lg:text-[30px] ${textColor}`}>
           Siyaram Profile
         </span>
       )}
