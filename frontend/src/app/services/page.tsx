@@ -7,6 +7,7 @@ import { constructMetadata } from "@/lib/metadata";
 export const metadata = constructMetadata({
   title: "Specialized Engineering Services",
   description: "Explore Siyaram Profile CNC Cutting, Profile Cutting, Circle Cutting, M.S. Plate Supply, Agro Parts, and Custom Engineering Solutions.",
+  canonicalUrl: "/services",
 });
 
 export default function ServicesPage() {

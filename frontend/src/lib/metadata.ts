@@ -21,12 +21,14 @@ export function constructMetadata({
     shortcut: '/favicon.ico',
   },
   noIndex = false,
+  canonicalUrl,
 }: {
   title?: string;
   description?: string;
   image?: string;
   icons?: any;
   noIndex?: boolean;
+  canonicalUrl?: string;
 } = {}): Metadata {
   const fullTitle = title
     ? `${title} - ${COMPANY_INFO.name}`
@@ -54,6 +56,9 @@ export function constructMetadata({
     },
     icons,
     metadataBase: new URL('https://siyaramprofile.in'),
+    alternates: {
+      canonical: canonicalUrl || '/',
+    },
     verification: {
       google: '_tlkhm2RelaQidNJLQfvVq1-yvQjw-ROCtdd3aO92JA',
     },

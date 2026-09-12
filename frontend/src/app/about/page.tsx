@@ -9,6 +9,7 @@ import { Compass, Eye } from "lucide-react";
 export const metadata = constructMetadata({
   title: "About Us - Our Legacy of Precision",
   description: "Pioneering industrial excellence through advanced manufacturing, structural integrity, and unwavering commitment to quality in Bhavnagar, Gujarat.",
+  canonicalUrl: "/about",
 });
 
 export default function AboutPage() {

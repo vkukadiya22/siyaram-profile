@@ -8,6 +8,7 @@ import { MapPin, Phone, Mail, Clock, ExternalLink } from "lucide-react";
 export const metadata = constructMetadata({
   title: "Contact Us",
   description: "Get in touch with Siyaram Profile engineering experts in Bhavnagar, Gujarat for custom CNC cutting and heavy plate inquiries.",
+  canonicalUrl: "/contact",
 });
 
 export default function ContactPage() {

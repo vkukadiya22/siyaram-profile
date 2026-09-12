@@ -7,6 +7,7 @@ import { constructMetadata } from "@/lib/metadata";
 export const metadata = constructMetadata({
   title: "Frequently Asked Questions (FAQ)",
   description: "Find answers regarding CNC cutting tolerances, steel plate thicknesses, CAD drawing formats, lead times, and shipping.",
+  canonicalUrl: "/faq",
 });
 
 export default function FAQPage() {
