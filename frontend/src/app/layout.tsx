@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Hanken_Grotesk, JetBrains_Mono, Rajdhani } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -60,6 +61,18 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-H4D2X6WCZV"
+        />
+        <Script id="google-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-H4D2X6WCZV');
+          `}
+        </Script>
       </head>
       <body className="bg-white text-deep-navy font-body-md antialiased selection:bg-primary-container selection:text-white min-h-screen flex flex-col">
         <Navbar />
